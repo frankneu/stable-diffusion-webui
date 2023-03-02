@@ -19,10 +19,10 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo Asia/Shanghai > /etc/timezone
 
 # 安装python库依赖
-RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ && \
-    pip config set global.trusted-host mirrors.aliyun.com && \
-    pip install --upgrade pip && \
-    pip install --user -r requirements.txt
+RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/ && \
+    pip3 config set global.trusted-host mirrors.aliyun.com && \
+    pip3 install --upgrade pip3 && \
+    pip3 install --user -r requirements.txt
 
 # 运行项目
 CMD ["webui.sh"]
