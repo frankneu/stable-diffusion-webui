@@ -1,7 +1,7 @@
 # 由cpt生成，若遇到问题请根据实际情况修改
 
 # 采用python或者alpine官方镜像做为运行时镜像
-FROM alpine:3.13 
+FROM alpine:3.17 
 
 # 设置应用工作目录
 WORKDIR /app
